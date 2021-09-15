@@ -35,6 +35,7 @@ body {
     overflow: hidden;
     width: 360px;
     position: absolute;
+    top: 28%;
     /* flex: 0 0 360px; */
 }
 
