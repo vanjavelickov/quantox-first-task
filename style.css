@@ -1,15 +1,11 @@
 body {
-    background-image: url('assets/bg-pattern-top.svg'), url('assets/bg-pattern-bottom.svg');
-    background-repeat: no-repeat;
-    /* background-position: -700px -800px, 500px 450px; */
-    background-position: -95% 160%, 200% -60%;
-    background-size: 1440px;
     background-color: hsl(185, 75%, 39%);
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 .container {
@@ -17,7 +13,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.min-width-class {
+    min-width: 100%;
+}
+
+.bc-image-left {
+    transform: translateY(-40%);
+}
+
+.bc-image-right {
+    transform: translateY(45%);
 }
 
 .card {
@@ -25,7 +33,9 @@ body {
     flex-direction: column;
     border-radius: 1rem;
     overflow: hidden;
-    flex: 0 0 360px;
+    width: 360px;
+    position: absolute;
+    /* flex: 0 0 360px; */
 }
 
 .card-header {
@@ -56,7 +66,6 @@ body {
     padding: 15px 10px 22px 10px;
 }
 
-
 .card-info-item-style {
     display: flex;
     flex-direction: column;
@@ -72,11 +81,4 @@ body {
 
 .letter-spacing-style {
     letter-spacing: 0.1em;
-}
-
-
-@media only screen and (max-width: 450px) {
-    body {
-        /* background-position:  */
-    }
 }
