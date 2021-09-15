@@ -1,0 +1,82 @@
+body {
+    background-image: url('assets/bg-pattern-top.svg'), url('assets/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    /* background-position: -700px -800px, 500px 450px; */
+    background-position: -95% 160%, 200% -60%;
+    background-size: 1440px;
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+    flex: 0 0 360px;
+}
+
+.card-header {
+    background-image: url('assets/bg-pattern-card.svg');
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    flex: 0 0 140px;
+}
+
+.card-image {
+    border-radius: 50%;
+    transform: translateY(50%);
+    border: 7px solid white;
+}
+
+.card-body {
+    background-color: white;
+    text-align: center;
+    padding-top: 7vh;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 10px 22px 10px;
+}
+
+
+.card-info-item-style {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px 10px 10px 10px;
+}
+
+.letter-design {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.letter-spacing-style {
+    letter-spacing: 0.1em;
+}
+
+
+@media only screen and (max-width: 450px) {
+    body {
+        /* background-position:  */
+    }
+}
